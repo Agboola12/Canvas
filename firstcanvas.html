@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CANVAS</title>
+</head>
+<body >	
+		<canvas id="c" width="1000px" height="600px" style="border:2px solid #d3d3d3;"></canvas>
+		<button onclick="house()">House</button> 
+			<button onclick="emoji()">Emoji</button>
+
+		<script type="text/javascript">
+		 function house() { 
+	   	document.getElementById('c');
+		var pencil = c.getContext("2d");
+
+			
+		pencil.beginPath();
+	    pencil.moveTo(50,200);
+	    pencil.lineTo(150,30);	
+	    pencil.stroke();
+
+		 
+		 pencil.beginPath();
+		 pencil.moveTo(250,200);
+		 pencil.lineTo(150,32);
+         pencil.stroke();
+
+
+		 pencil.beginPath();
+		 pencil.moveTo(50,200);
+		 pencil.lineTo(250,200);
+         pencil.stroke();
+
+         pencil.beginPath();
+		 pencil.moveTo(50,380);
+		 pencil.lineTo(50,200);
+         pencil.stroke();
+
+
+         pencil.beginPath();
+		 pencil.moveTo(250,380);
+		 pencil.lineTo(250,200);
+         pencil.stroke();
+
+         pencil.beginPath();
+		 pencil.moveTo(60,250);
+		 pencil.lineTo(100,250);
+         pencil.stroke();
+         pencil.fillStyle ='yellow';
+		pencil.fill();
+		pencil.stroke();
+
+         pencil.beginPath();
+		 pencil.moveTo(60,230);
+		 pencil.lineTo(100,230);
+         pencil.stroke();
+
+
+
+         pencil.beginPath();
+		 pencil.moveTo(190,250);
+		 pencil.lineTo(230,250);
+         pencil.stroke();
+
+
+         pencil.beginPath();
+		 pencil.moveTo(190,230);
+		 pencil.lineTo(230,230);
+         pencil.stroke();
+
+
+         pencil.beginPath();
+		 pencil.moveTo(60,230);
+		 pencil.lineTo(60,250);
+         pencil.stroke();
+
+         pencil.beginPath();
+		 pencil.moveTo(100,230);
+		 pencil.lineTo(100,250);
+         pencil.stroke();
+
+         pencil.beginPath();
+		 pencil.moveTo(190,230);
+		 pencil.lineTo(190,250);
+         pencil.stroke();
+
+
+         pencil.beginPath();
+		 pencil.moveTo(230,230);
+		 pencil.lineTo(230,250);
+         pencil.stroke();
+
+
+         pencil.beginPath();
+		 pencil.moveTo(170,300);
+		 pencil.lineTo(170,380);
+         pencil.stroke();
+
+          pencil.beginPath();
+		 pencil.moveTo(120,300);
+		 pencil.lineTo(120,380);
+         pencil.stroke();
+
+
+         pencil.beginPath();
+		 pencil.moveTo(170,300);
+		 pencil.lineTo(120,300);
+         pencil.stroke();
+
+
+         pencil.beginPath();
+		 pencil.moveTo(250,380);
+		 pencil.lineTo(50,380);
+         pencil.stroke();
+
+        
+        pencil.beginPath();
+		 pencil.moveTo(160,320);
+		 pencil.lineTo(160,350);
+         pencil.stroke();
+
+
+		pencil.beginPath();
+		pencil.arc(160,320,5,0,2*Math.PI);
+		pencil.stroke();
+		pencil.fillStyle ='yellow';
+		pencil.fill();
+		pencil.stroke();
+
+		pencil.beginPath();
+		pencil.arc(160,350,5,0,2*Math.PI);
+		pencil.stroke();
+
+	}
+
+	function emoji(){
+
+			
+		var canvas = document.getElementById('c');
+		var pencil = canvas.getContext("2d");
+		pencil.font = "30px Arial";
+		pencil.fillText("Smiles",0,50);
+		
+		
+		 pencil.beginPath();
+		 pencil.arc(150,70,50,0,2*Math.PI)		
+		 pencil.stroke();
+
+		 pencil.beginPath();
+		 pencil.arc(150,70,35,0,1*Math.PI)		
+		 pencil.stroke();
+
+		 pencil.beginPath();
+		 pencil.arc(120,50,4,0,2*Math.PI)		
+		 pencil.stroke();
+
+		 pencil.beginPath();
+		 pencil.arc(180,50,4,0,2*Math.PI)		
+		 pencil.stroke();		
+	} 	
+	
+
+		</script>
+</body>
+</html>

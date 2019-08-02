@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<canvas id="myCanvas" width="1000" height="600" style="border:5px solid black;">
+</canvas>
+
+<p>
+	<button onclick="myCanvas()">Lines</button>
+   <button onclick="MyCircle()">Circle</button>
+</p>
+
+
+<script>
+function myCanvas() {
+
+    var c = document.getElementById("myCanvas");
+   var pencil = c.getContext("2d");
+   let x;
+   let y;
+   let xx;
+	let xy;   
+c.onmousedown = function () {
+pencil.beginPath(); 
+x = event.clientX;
+y = event.clientY;
+
+
+pencil.moveTo(x, y);
+};
+
+c.onmouseup = function () {
+	
+xx = event.clientX;
+xy = event.clientY;
+
+ pencil.lineTo(xx, xy);
+pencil.stroke();
+ 
+};   
+}
+
+
+
+function MyCircle(){
+	 var d = document.getElementById("myCanvas");
+   var pencil = d.getContext("2d");
+
+let x;
+   let y;
+   let xx;
+	let xy;   
+d.onmousedown = function () {
+pencil.beginPath(); 
+x = event.clientX;
+y = event.clientY;
+
+
+};
+
+d.onmouseup = function () {
+	
+xx = event.clientX;
+xy = event.clientY;
+
+ // pencil.lineTo(xx, xy);
+ pencil.arc(x, y*Math.PI);
+pencil.stroke();
+ 
+};   
+}
+
+
+
+
+	
+
+
+
+
+
+</script>
+</body>
+</html>
